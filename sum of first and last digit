@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class gfg{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int first=0;
+        int last=a%10;// 123456 -6
+        while(a>0){//12345>0
+          first=a;//first=12345
+          a=a/10;//1234
+        }
+        System.out.print(first+last);
+
+    }
+}
